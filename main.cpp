@@ -1,7 +1,6 @@
 #include<SFML/Graphics.hpp>
 #include<iostream>
 
-
 int numberOfPoints = 1000000;
 
 
@@ -40,6 +39,8 @@ void drawTriangle(sf::RenderWindow& window)
 }
 int main()
 {
+  std::cout << "Enter a number of points: ";
+  std::cin >> numberOfPoints;
   srand(time(0));
   sf::RenderWindow window(sf::VideoMode(500, 250), "fractal");
  
